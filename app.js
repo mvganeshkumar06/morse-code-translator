@@ -38,7 +38,6 @@ btnTranslate.addEventListener("click", () => {
       })
       .then((data) => {
         audio.src = data.contents.translated.audio;
-        console.log(data.contents);
       })
       .catch((error) => {
         console.log(error, error.message);
